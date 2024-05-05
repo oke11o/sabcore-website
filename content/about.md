@@ -1,18 +1,10 @@
 ---
-title: 'The Product and Features'
+title: 'Complete Load Testing Solution with AI-Driven Load Testing Platform'
 layout: about
 date: 2024-05-04T13:32:17+02:00
 draft: false
-featured_image: images/banners/banner-1.png
+featured_image: images/banners/banner-about.webp
 ---
-
-## About the Product and Its Features
-
-**Title: Complete Load Testing Solution with AI-Driven Load Testing Platform**
-
----
-
-**Introduction:**
 
 The AI-Driven Load Testing Platform is an innovative solution for comprehensive load testing of your web services and applications. Combining cutting-edge artificial intelligence technologies with powerful analytical tools, our platform provides everything needed to ensure high performance and reliability of your software.
 

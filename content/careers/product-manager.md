@@ -2,7 +2,7 @@
 title: 'Product Manager'
 date: 2024-05-04T13:32:39+02:00
 draft: false
-featured_image: images/banners/banner-career.png
+featured_image: images/banners/banner-manager.webp
 ---
 
 

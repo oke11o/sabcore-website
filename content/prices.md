@@ -2,16 +2,14 @@
 title: Choose a Pricing Plan That Fits Your Business
 date: '2024-05-04T13:32:17+02:00'
 draft: false
-featured_image: images/banners/banner-price.png
+featured_image: images/banners/banner-price.webp
 ---
-
-**Introduction:**
 
 Our pricing plans are designed to accommodate a variety of business needs and offer flexibility depending on your scale of use and required level of functionality. All plans include access to our innovative AI-driven load testing platform.
 
 ---
 
-**Pricing Plans:**
+### Pricing Plans
 
 1. **Starter**
     - **Price:** $100/month
