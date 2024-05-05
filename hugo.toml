@@ -1,4 +1,4 @@
-baseURL = 'https://sabcore.com/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'Sab Core'
 theme = 'ananke'
