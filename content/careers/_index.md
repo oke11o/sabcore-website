@@ -5,7 +5,7 @@ draft: false
 featured_image: images/banners/banner-career.webp
 ---
 
-At SabCore ccmpany, we strive to redefine the boundaries of what's possible in load testing with our advanced technologies and innovative solutions. Our success is built on the talent and passion of our employees, who contribute daily to creating the best products for our clients.
+At SabCore company, we strive to redefine the boundaries of what's possible in load testing with our advanced technologies and innovative solutions. Our success is built on the talent and passion of our employees, who contribute daily to creating the best products for our clients.
 
 ---
 
