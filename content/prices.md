@@ -25,3 +25,7 @@ Our pricing plans are designed to accommodate a variety of business needs and of
     - **Price:** On request
     - **Description:** For large organizations that require a scalable solution with full support and customization.
     - **Includes:** Unlimited testing hours, full access to AI analytics and automation, 24/7 support with a dedicated manager, unlimited integrations, API access.
+
+## Order Now
+
+{{< form-contact action="https://formspree.io/f/meqydbzd" >}}

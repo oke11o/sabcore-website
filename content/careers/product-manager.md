@@ -11,3 +11,7 @@ As a Product Manager, you will be responsible for developing and implementing th
 **Requirements:** 
 
 Experience as a Product Manager in the IT sector, excellent communication skills, ability to analyze market trends and formulate product requirements.
+
+## Contact Us
+
+{{< form-contact action="https://formspree.io/f/meqydbzd" >}}

@@ -26,3 +26,6 @@ We believe in the power of innovation and collaboration. Our company fosters an 
 
 If you are ready to be a part of a team that prioritizes innovation and quality, we are waiting for your resume! Please send it through our online response form or by email.
 
+## Contact Us
+
+{{< form-contact action="https://formspree.io/f/meqydbzd" >}}

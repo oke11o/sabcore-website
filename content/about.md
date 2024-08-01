@@ -30,3 +30,6 @@ Our platform is designed with the needs of modern enterprises in mind, which req
 
 6. **Comprehensive Security**: Ensures testing security and data protection at all stages.
 
+## Contact Us
+
+{{< form-contact action="https://formspree.io/f/meqydbzd" >}}
