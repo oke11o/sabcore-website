@@ -2,7 +2,7 @@ name = "sabcore"
 
 [build]
 command = "hugo -b $CF_PAGES_URL"
-pages_build_output_dir = "public"
+output_dir = "public"
 
 [build.environment]
 HUGO_VERSION = "0.145.0"
