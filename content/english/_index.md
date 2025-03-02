@@ -6,8 +6,8 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Start Free Trial"
-    link: "/contact"
+    label: "Request Demo"
+    link: "/request"
 
 # Features
 features:
@@ -21,8 +21,8 @@ features:
       - "Real user behavior simulation"
     button:
       enable: true
-      label: "Learn More"
-      link: "/about"
+      label: "Request Demo"
+      link: "/request"
 
   - title: "Real-Time Analytics"
     image: "/images/service-2.png"
@@ -34,8 +34,8 @@ features:
       - "Predictive scaling recommendations"
     button:
       enable: true
-      label: "View Demo"
-      link: "/contact"
+      label: "Request Demo"
+      link: "/request"
 
   - title: "Intelligent Reporting"
     image: "/images/service-3.png"
@@ -47,8 +47,8 @@ features:
       - "Resource optimization suggestions"
     button:
       enable: true
-      label: "See Features"
-      link: "/about"
+      label: "Request Demo"
+      link: "/request"
 
   - title: "Enterprise Integration"
     image: "/images/service-4.png"
@@ -60,6 +60,6 @@ features:
       - "Custom webhook support"
     button:
       enable: true
-      label: "Explore Integrations"
-      link: "/about"
+      label: "Request Demo"
+      link: "/request"
 ---
