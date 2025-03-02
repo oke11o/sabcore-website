@@ -1,5 +1,5 @@
 ---
-enable: true
+enable: false
 title: "What Our Clients Say"
 description: "Discover how our AI-powered load testing platform is helping companies deliver better performing applications."
 
