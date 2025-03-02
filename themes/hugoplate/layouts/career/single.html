@@ -13,7 +13,8 @@
           <!-- Application Form -->
           <div class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg p-8 mt-8">
             <h3 class="h4 mb-6 text-center">Apply for this Position</h3>
-            <form action="{{ site.Params.contact_form_action }}" method="POST" class="row">
+            <form action="https://formspree.io/f/meqydbzd" method="POST" class="row">
+              <input type="hidden" name="position" value="{{ .Title }}" />
               <div class="md:col-6 mb-6">
                 <label for="name" class="form-label">
                   Full Name <span class="text-red-500">*</span>
