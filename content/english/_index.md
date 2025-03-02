@@ -1,53 +1,66 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "Enhance Your Load Testing with AI-Driven Load Testing Platform"
+  content: "Innovative Solutions for Optimizing the Performance of Your Applications"
   image: "/images/banner.png"
   button:
     enable: true
     label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "/pricing"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Automated Testing"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+    content: "Automatic creation of test scenarios and load management with minimal intervention."
+    # bulletpoints:
+    #   - "Advanced AI-powered testing scenarios"
+    #   - "Real-time performance analytics"
+    #   - "Automated test generation"
+    #   - "Comprehensive reporting"
+    #   - "Cloud-based infrastructure"
+    #   - "24/7 expert support"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Learn More"
+      link: "/about"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  - title: "Intelligent Analysis"
+    image: "/images/service-2.png"
+    content: "Instant identification of bottlenecks and suggestions for optimization to enhance performance."
+    # bulletpoints:
+    #   - "Intelligent load distribution"
+    #   - "Custom scenario creation"
+    #   - "Geographic location testing"
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "View Pricing"
+      link: "/pricing"
+
+  - title: "Real-time Monitoring"
+    image: "/images/service-3.png"
+    content: "Oversight of the testing process in real time with a user-friendly dashboard."
+    # bulletpoints:
+    #   - "Unlimited concurrent users"
+    #   - "Advanced security features"
+    #   - "Custom integrations"
+    #   - "Dedicated support team"
+    button:
+      enable: true
+      label: "Contact Us"
+      link: "/about"
+
+  - title: "Flexible Scalability"
+    image: "/images/service-1.png"
+    content: "Easy adaptation to changes in load and application requirements."
+    # bulletpoints:
+    #   - "Unlimited concurrent users"
+    #   - "Advanced security features"
+    #   - "Custom integrations"
+    #   - "Dedicated support team"
+    button:
+      enable: true
+      label: "Contact Us"
+      link: "/about"
 ---
