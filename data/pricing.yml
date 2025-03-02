@@ -1,0 +1,12 @@
+faq:
+  - question: "What payment methods do you accept?"
+    answer: "We accept all major credit cards, PayPal, and bank transfers for annual plans."
+    
+  - question: "Can I change my plan later?"
+    answer: "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+    
+  - question: "Is there a long-term contract?"
+    answer: "No, our services are provided on a month-to-month basis. You can cancel at any time."
+    
+  - question: "What's included in the free trial?"
+    answer: "The 14-day free trial includes all features of the Professional plan, allowing you to fully test our platform." 
