@@ -1,27 +1,12 @@
 name = "sabcore"
-compatibility_date = "2023-01-01"
-
-[site]
-bucket = "./public"
-entry-point = "workers-site"
 
 [build]
 command = "hugo --gc --minify"
-publish = "public"
-base = "/"
+pages_build_output_dir = "public"
 
 [build.environment]
 HUGO_VERSION = "0.120.4"
 NODE_VERSION = "18"
-
-[env.production]
-name = "sabcore-prod"
-route = "sabcore.com/*"
-zone_id = ""  # Your Cloudflare Zone ID
-
-[env.staging]
-name = "sabcore-staging"
-route = "staging.sabcore.com/*"
 
 [[redirects]]
 from = "/*"
@@ -44,11 +29,6 @@ for = "/images/*"
 Cache-Control = "public, max-age=31536000"
 
 [[headers]]
-for = "/*.css"
-[headers.values]
-Cache-Control = "public, max-age=31536000"
-
-[[headers]]
-for = "/*.js"
+for = "/*.{css,js}"
 [headers.values]
 Cache-Control = "public, max-age=31536000" 
