@@ -39,7 +39,4 @@ Our engineering team is at the heart of our innovation, building cutting-edge so
 - Solve complex technical challenges
 - Contribute to open-source projects
 - Regular knowledge sharing sessions
-- Flexible work environment
-
-<div class="text-center mt-8">
-  <a href="/contact" class="btn btn-primary">Apply Now</a> 
+- Flexible work environment 

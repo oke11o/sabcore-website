@@ -38,7 +38,3 @@ Our managers play a crucial role in driving innovation and leading teams to succ
 - Significant impact on company direction
 - Professional development opportunities
 - Competitive compensation package
-
-<div class="text-center mt-8">
-  <a href="/contact" class="btn btn-primary">Apply Now</a>
-</div> 
