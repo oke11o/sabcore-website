@@ -1,7 +1,7 @@
 name = "sabcore"
 
 [build]
-command = "hugo --gc --minify"
+command = "npm install && hugo --gc --minify"
 pages_build_output_dir = "public"
 
 [build.environment]
