@@ -1,0 +1,54 @@
+name = "sabcore"
+compatibility_date = "2023-01-01"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[build]
+command = "hugo --gc --minify"
+publish = "public"
+base = "/"
+
+[build.environment]
+HUGO_VERSION = "0.120.4"
+NODE_VERSION = "18"
+
+[env.production]
+name = "sabcore-prod"
+route = "sabcore.com/*"
+zone_id = ""  # Your Cloudflare Zone ID
+
+[env.staging]
+name = "sabcore-staging"
+route = "staging.sabcore.com/*"
+
+[[redirects]]
+from = "/*"
+to = "/404"
+status = 404
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "interest-cohort=()"
+Content-Security-Policy = "upgrade-insecure-requests"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+[[headers]]
+for = "/images/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000" 
