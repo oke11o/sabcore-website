@@ -1,66 +1,65 @@
 ---
 # Banner
 banner:
-  title: "Enhance Your Load Testing with AI-Driven Load Testing Platform"
-  content: "Innovative Solutions for Optimizing the Performance of Your Applications"
+  title: "Next-Gen Load Testing Platform Powered by AI"
+  content: "Transform your performance testing with intelligent automation, real-time analytics, and predictive insights. Get actionable results faster."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "/pricing"
+    label: "Start Free Trial"
+    link: "/contact"
 
 # Features
 features:
-  - title: "Automated Testing"
+  - title: "AI-Powered Test Generation"
     image: "/images/service-1.png"
-    content: "Automatic creation of test scenarios and load management with minimal intervention."
-    # bulletpoints:
-    #   - "Advanced AI-powered testing scenarios"
-    #   - "Real-time performance analytics"
-    #   - "Automated test generation"
-    #   - "Comprehensive reporting"
-    #   - "Cloud-based infrastructure"
-    #   - "24/7 expert support"
+    content: "Our AI engine automatically creates realistic test scenarios based on your actual user patterns and application behavior."
+    bulletpoints:
+      - "Smart traffic pattern recognition"
+      - "Dynamic load profile generation"
+      - "Automatic test script maintenance"
+      - "Real user behavior simulation"
     button:
       enable: true
       label: "Learn More"
       link: "/about"
 
-  - title: "Intelligent Analysis"
+  - title: "Real-Time Analytics"
     image: "/images/service-2.png"
-    content: "Instant identification of bottlenecks and suggestions for optimization to enhance performance."
-    # bulletpoints:
-    #   - "Intelligent load distribution"
-    #   - "Custom scenario creation"
-    #   - "Geographic location testing"
+    content: "Get instant insights into your application's performance with our advanced analytics dashboard."
+    bulletpoints:
+      - "Live performance metrics"
+      - "AI-powered anomaly detection"
+      - "Automated bottleneck identification"
+      - "Predictive scaling recommendations"
     button:
       enable: true
-      label: "View Pricing"
-      link: "/pricing"
+      label: "View Demo"
+      link: "/contact"
 
-  - title: "Real-time Monitoring"
+  - title: "Intelligent Reporting"
     image: "/images/service-3.png"
-    content: "Oversight of the testing process in real time with a user-friendly dashboard."
-    # bulletpoints:
-    #   - "Unlimited concurrent users"
-    #   - "Advanced security features"
-    #   - "Custom integrations"
-    #   - "Dedicated support team"
+    content: "Comprehensive reports with actionable insights and AI-driven recommendations for optimization."
+    bulletpoints:
+      - "Custom report generation"
+      - "Trend analysis and forecasting"
+      - "Performance comparison"
+      - "Resource optimization suggestions"
     button:
       enable: true
-      label: "Contact Us"
+      label: "See Features"
       link: "/about"
 
-  - title: "Flexible Scalability"
-    image: "/images/service-1.png"
-    content: "Easy adaptation to changes in load and application requirements."
-    # bulletpoints:
-    #   - "Unlimited concurrent users"
-    #   - "Advanced security features"
-    #   - "Custom integrations"
-    #   - "Dedicated support team"
+  - title: "Enterprise Integration"
+    image: "/images/service-4.png"
+    content: "Seamlessly integrate with your existing tools and workflows for maximum efficiency."
+    bulletpoints:
+      - "CI/CD pipeline integration"
+      - "API automation support"
+      - "Third-party tool connectivity"
+      - "Custom webhook support"
     button:
       enable: true
-      label: "Contact Us"
+      label: "Explore Integrations"
       link: "/about"
 ---

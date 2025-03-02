@@ -1,29 +1,29 @@
 ---
 enable: true
-title: "What Users Are Saying About SabCore"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "What Our Clients Say"
+description: "Discover how our AI-powered load testing platform is helping companies deliver better performing applications."
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Sarah Chen"
+    designation: "CTO at TechFlow Solutions"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "The AI-driven insights have revolutionized how we approach performance testing. We've reduced testing time by 60% while catching issues we previously missed."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Michael Rodriguez"
+    designation: "Lead DevOps Engineer at ScaleRight"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "The automatic test generation and real-time analytics have become indispensable for our CI/CD pipeline. It's like having an extra performance expert on the team."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Emma Thompson"
+    designation: "Performance Engineer at GlobalCommerce"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "The platform's ability to simulate realistic user behavior and automatically identify bottlenecks has significantly improved our testing efficiency and application reliability."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "David Park"
+    designation: "VP of Engineering at CloudScale"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "We've been able to catch performance issues before they impact our users. The ROI in terms of prevented outages and improved user experience has been substantial."
 
 # don't create a separate page
 _build:
