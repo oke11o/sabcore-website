@@ -1,6 +1,6 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/favicon.png"
+favicon = "images/favicon/apple-touch-icon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/SabCore-Logo-Transparent.png"
 logo_darkmode = "images/SabCore-Logo.png"
@@ -38,7 +38,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Get Demo"
+label = "Get a Demo"
 link = "request"
 
 # search
@@ -62,9 +62,10 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
+title = "SabCore"
+description = "AI-Powered Load Testing Platform"
+keywords = ["Load Testing", "Performance Testing", "AI", "DevOps"]
+author = "Zeon Studio"
 twitter = "zeon_studio"
 image = "images/og-image.png"
 

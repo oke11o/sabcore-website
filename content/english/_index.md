@@ -6,7 +6,7 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Request Demo"
+    label: "Get a Demo"
     link: "/request"
 
 # Features
@@ -21,7 +21,7 @@ features:
       - "Real user behavior simulation"
     button:
       enable: true
-      label: "Request Demo"
+      label: "Get a Demo"
       link: "/request"
 
   - title: "Real-Time Analytics"
@@ -34,7 +34,7 @@ features:
       - "Predictive scaling recommendations"
     button:
       enable: true
-      label: "Request Demo"
+      label: "Get a Demo"
       link: "/request"
 
   - title: "Intelligent Reporting"
@@ -47,7 +47,7 @@ features:
       - "Resource optimization suggestions"
     button:
       enable: true
-      label: "Request Demo"
+      label: "Get a Demo"
       link: "/request"
 
   - title: "Enterprise Integration"
@@ -60,6 +60,6 @@ features:
       - "Custom webhook support"
     button:
       enable: true
-      label: "Request Demo"
+      label: "Get a Demo"
       link: "/request"
 ---
