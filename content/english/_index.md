@@ -51,7 +51,7 @@ features:
       link: "/request"
 
   - title: "Enterprise Integration"
-    image: "/images/service-4.png"
+    image: "/images/service-1.png"
     content: "Seamlessly integrate with your existing tools and workflows for maximum efficiency."
     bulletpoints:
       - "CI/CD pipeline integration"
