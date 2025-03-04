@@ -3,7 +3,7 @@
 banner:
   title: "Next-Gen Load Testing Platform Powered by AI"
   content: "Transform your performance testing with intelligent automation, real-time analytics, and predictive insights. Get actionable results faster."
-  image: "/images/banner.png"
+  image: "/images/abstract-banner.webp"
   button:
     enable: true
     label: "Get a Demo"
@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "AI-Powered Test Generation"
-    image: "/images/service-1.png"
+    image: "/images/abstract-2.webp"
     content: "Our AI engine automatically creates realistic test scenarios based on your actual user patterns and application behavior."
     bulletpoints:
       - "Smart traffic pattern recognition"
@@ -25,7 +25,7 @@ features:
       link: "/request"
 
   - title: "Real-Time Analytics"
-    image: "/images/service-2.png"
+    image: "/images/abstract-1.webp"
     content: "Get instant insights into your application's performance with our advanced analytics dashboard."
     bulletpoints:
       - "Live performance metrics"
@@ -38,7 +38,7 @@ features:
       link: "/request"
 
   - title: "Intelligent Reporting"
-    image: "/images/service-3.png"
+    image: "/images/abstract-3.webp"
     content: "Comprehensive reports with actionable insights and AI-driven recommendations for optimization."
     bulletpoints:
       - "Custom report generation"
@@ -51,7 +51,7 @@ features:
       link: "/request"
 
   - title: "Enterprise Integration"
-    image: "/images/service-1.png"
+    image: "/images/abstract-4.webp"
     content: "Seamlessly integrate with your existing tools and workflows for maximum efficiency."
     bulletpoints:
       - "CI/CD pipeline integration"
