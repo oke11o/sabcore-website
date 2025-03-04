@@ -1,0 +1,118 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-7">
+          <div class="content mb-12 text-center">
+            <p>See how our AI-powered platform can transform your load testing process. Fill out the form below and our team will contact you to schedule a personalized demo.</p>
+          </div>
+          
+          <form action="https://formspree.io/f/meqydbzd" method="POST" class="bg-light dark:bg-darkmode-light rounded-lg p-8">
+            <input type="hidden" name="form_type" value="Demo Request" />
+            <div class="mb-6">
+              <label for="name" class="form-label">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="John Doe"
+                type="text"
+                required />
+            </div>
+
+            <div class="mb-6">
+              <label for="company" class="form-label">
+                Company Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="company"
+                name="company"
+                class="form-input"
+                placeholder="Your Company"
+                type="text"
+                required />
+            </div>
+
+            <div class="mb-6">
+              <label for="email" class="form-label">
+                Work Email <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="john@company.com"
+                type="email"
+                required />
+            </div>
+
+            <div class="mb-6">
+              <label for="phone" class="form-label">
+                Phone Number
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="+1 (555) 000-0000"
+                type="tel" />
+            </div>
+
+            <div class="mb-6">
+              <label for="team_size" class="form-label">
+                Team Size <span class="text-red-500">*</span>
+              </label>
+              <select id="team_size" name="team_size" class="form-input" required>
+                <option value="">Select team size</option>
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="51-200">51-200 employees</option>
+                <option value="201-500">201-500 employees</option>
+                <option value="501+">501+ employees</option>
+              </select>
+            </div>
+
+            <div class="mb-6">
+              <label for="requirements" class="form-label">
+                Tell us about your load testing needs
+              </label>
+              <textarea
+                id="requirements"
+                name="requirements"
+                class="form-input"
+                placeholder="Please share your current challenges and requirements..."
+                rows="4"></textarea>
+            </div>
+
+            <div class="mb-6">
+              <label class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  class="h-4 w-4 rounded border-border bg-transparent"
+                  required />
+                <span class="ml-2 inline-block">I agree to receive communications about AI Load Testing Platform</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-full">Request Demo</button>
+          </form>
+
+          <div class="content mt-8 text-center">
+            <h3 class="h4 mb-4">What to expect next:</h3>
+            <ul class="text-left list-disc list-inside">
+              <li class="mb-2">We'll contact you within one business day to schedule your demo</li>
+              <li class="mb-2">30-minute personalized platform walkthrough</li>
+              <li class="mb-2">Q&A session with our technical expert</li>
+              <li>Custom pricing proposal based on your needs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }} 

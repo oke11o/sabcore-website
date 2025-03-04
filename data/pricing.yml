@@ -1,0 +1,27 @@
+faq:
+  - question: "How does AI improve load testing?"
+    answer: "Our AI technology analyzes real user behavior patterns to create more realistic test scenarios, automatically identifies performance bottlenecks, and provides predictive insights for optimization. This results in more efficient and accurate testing compared to traditional methods."
+    
+  - question: "Can I integrate the platform with my existing tools?"
+    answer: "Yes, our platform offers extensive integration capabilities with popular CI/CD tools, monitoring systems, and development platforms. We support REST APIs, webhooks, and custom integrations to fit your workflow."
+    
+  - question: "How quickly can I get started?"
+    answer: "You can start running your first test within minutes of signing up. Our AI assists in test creation, and our onboarding team provides guidance to ensure you're successful from day one."
+    
+  - question: "What kind of support do you provide?"
+    answer: "All plans include technical support, with response times varying by tier. Enterprise clients get 24/7 priority support with a dedicated technical account manager. We also provide extensive documentation, tutorials, and regular training sessions."
+    
+  - question: "Is my data secure?"
+    answer: "Security is our top priority. We maintain SOC 2 compliance, encrypt all data in transit and at rest, and provide detailed access controls. Your test data and results are completely isolated and protected."
+    
+  - question: "What payment methods do you accept?"
+    answer: "We accept all major credit cards, PayPal, and bank transfers for annual plans."
+    
+  - question: "Can I change my plan later?"
+    answer: "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+    
+  - question: "Is there a long-term contract?"
+    answer: "No, our services are provided on a month-to-month basis. You can cancel at any time."
+    
+  - question: "What's included in the free trial?"
+    answer: "The 14-day free trial includes all features of the Professional plan, allowing you to fully test our platform." 

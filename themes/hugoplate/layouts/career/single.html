@@ -1,0 +1,164 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <!-- Main Content -->
+          <div class="content mb-12">
+            {{ .Content }}
+          </div>
+
+          <!-- Application Form -->
+          <div class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg p-8 mt-8">
+            <h3 class="h4 mb-6 text-center">Apply for this Position</h3>
+            <form action="https://formspree.io/f/meqydbzd" method="POST" class="row">
+              <input type="hidden" name="position" value="{{ .Title }}" />
+              <div class="md:col-6 mb-6">
+                <label for="name" class="form-label">
+                  Full Name <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="John Doe"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="md:col-6 mb-6">
+                <label for="email" class="form-label">
+                  Email Address <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="john@email.com"
+                  type="email"
+                  required
+                />
+              </div>
+
+              <div class="md:col-6 mb-6">
+                <label for="phone" class="form-label">
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+1 234 567 8900"
+                  type="tel"
+                />
+              </div>
+
+              <div class="md:col-6 mb-6">
+                <label for="location" class="form-label">
+                  Current Location <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="location"
+                  name="location"
+                  class="form-input"
+                  placeholder="City, Country"
+                  type="text"
+                  required
+                />
+              </div>
+
+              <div class="md:col-6 mb-6">
+                <label for="linkedin" class="form-label">
+                  LinkedIn Profile
+                </label>
+                <input
+                  id="linkedin"
+                  name="linkedin"
+                  class="form-input"
+                  placeholder="https://linkedin.com/in/username"
+                  type="url"
+                />
+              </div>
+
+              <div class="md:col-6 mb-6">
+                <label for="portfolio" class="form-label">
+                  Portfolio/GitHub
+                </label>
+                <input
+                  id="portfolio"
+                  name="portfolio"
+                  class="form-input"
+                  placeholder="https://github.com/username"
+                  type="url"
+                />
+              </div>
+
+              <div class="col-12 mb-6">
+                <label for="experience" class="form-label">
+                  Years of Experience <span class="text-red-500">*</span>
+                </label>
+                <select id="experience" name="experience" class="form-input" required>
+                  <option value="">Select experience</option>
+                  <option value="1-2">1-2 years</option>
+                  <option value="3-5">3-5 years</option>
+                  <option value="5-7">5-7 years</option>
+                  <option value="7+">7+ years</option>
+                </select>
+              </div>
+
+              <div class="col-12 mb-6">
+                <label for="resume" class="form-label">
+                  Resume/CV <span class="text-red-500">*</span>
+                </label>
+                <input
+                  id="resume"
+                  name="resume"
+                  class="form-input"
+                  type="file"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
+                <p class="text-sm text-text-light mt-1">Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
+              </div>
+
+              <div class="col-12 mb-6">
+                <label for="message" class="form-label">
+                  Why are you interested in this position? <span class="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input"
+                  placeholder="Tell us about your interest and what makes you a great fit..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-12 mb-6">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    class="h-4 w-4 rounded border-border bg-transparent"
+                    required
+                  />
+                  <span class="ml-2">
+                    I agree to the processing of my personal data and to be contacted about this position
+                  </span>
+                </label>
+              </div>
+
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }} 

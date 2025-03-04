@@ -1,0 +1,130 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <!-- Hero Section -->
+          <div class="content text-center mb-12">
+            <p class="text-lg">{{ .Description }}</p>
+          </div>
+
+          <!-- Main Content -->
+          <div class="content mb-12">
+            {{ .Content }}
+          </div>
+
+          <!-- Child Pages -->
+          {{ $currentPage := . }}
+          {{ if .Pages }}
+          <div class="row justify-center mb-12">
+            {{ range .Pages }}
+            <div class="md:col-6 mb-8">
+              <div class="bg-theme-light dark:bg-darkmode-theme-light rounded-lg p-8 h-full">
+                <h3 class="h4 mb-3">
+                  <a href="{{ .RelPermalink }}" class="block hover:text-primary transition">
+                    {{ .Title }}
+                  </a>
+                </h3>
+                {{ with .Description }}
+                <p class="text-text-light mb-6">{{ . }}</p>
+                {{ end }}
+                <a href="{{ .RelPermalink }}" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+
+<!--          &lt;!&ndash; Stats Section &ndash;&gt;-->
+<!--          <div class="row justify-center mb-12">-->
+<!--            <div class="md:col-3 mb-6">-->
+<!--              <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded">-->
+<!--                <h3 class="h4 mb-2 font-bold">50+</h3>-->
+<!--                <p>Team Members</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="md:col-3 mb-6">-->
+<!--              <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded">-->
+<!--                <h3 class="h4 mb-2 font-bold">15+</h3>-->
+<!--                <p>Countries</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="md:col-3 mb-6">-->
+<!--              <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded">-->
+<!--                <h3 class="h4 mb-2 font-bold">4.8/5</h3>-->
+<!--                <p>Employee Rating</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+          <!-- Values Section -->
+          <div class="row justify-center mb-12">
+            <div class="lg:col-10">
+              <h2 class="h3 mb-8 text-center">Our Values</h2>
+              <div class="row justify-center">
+                <div class="md:col-4 mb-6">
+                  <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded h-full">
+                    <i class="fas fa-lightbulb text-3xl text-primary mb-4"></i>
+                    <h3 class="h5 mb-3">Innovation</h3>
+                    <p>We push boundaries and embrace new technologies</p>
+                  </div>
+                </div>
+                <div class="md:col-4 mb-6">
+                  <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded h-full">
+                    <i class="fas fa-users text-3xl text-primary mb-4"></i>
+                    <h3 class="h5 mb-3">Collaboration</h3>
+                    <p>We achieve more when we work together</p>
+                  </div>
+                </div>
+                <div class="md:col-4 mb-6">
+                  <div class="text-center p-4 bg-theme-light dark:bg-darkmode-theme-light rounded h-full">
+                    <i class="fas fa-rocket text-3xl text-primary mb-4"></i>
+                    <h3 class="h5 mb-3">Excellence</h3>
+                    <p>We strive for quality in everything we do</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefits Section -->
+          <div class="row justify-center">
+            <div class="lg:col-10">
+              <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-6">
+                <h2 class="h3 mb-6 text-center">Perks & Benefits</h2>
+                <div class="row">
+                  <div class="md:col-6 mb-4">
+                    <div class="flex items-center">
+                      <i class="fas fa-check text-primary mr-2"></i>
+                      <span>Flexible Remote Work</span>
+                    </div>
+                  </div>
+                  <div class="md:col-6 mb-4">
+                    <div class="flex items-center">
+                      <i class="fas fa-check text-primary mr-2"></i>
+                      <span>Health & Wellness Programs</span>
+                    </div>
+                  </div>
+                  <div class="md:col-6 mb-4">
+                    <div class="flex items-center">
+                      <i class="fas fa-check text-primary mr-2"></i>
+                      <span>Learning & Development</span>
+                    </div>
+                  </div>
+                  <div class="md:col-6 mb-4">
+                    <div class="flex items-center">
+                      <i class="fas fa-check text-primary mr-2"></i>
+                      <span>Stock Options</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
