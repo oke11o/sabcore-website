@@ -78,6 +78,68 @@
   {{ end }}
   <!-- /Features -->
 
+  <!-- Flutch.ai Project -->
+  {{ with .Params.flutch }}
+    {{ if .enable }}
+      <section class="section bg-gradient">
+        <div class="container">
+          <div class="row items-center justify-between">
+            <div class="md:col-7 lg:col-6">
+              <div class="mb-4">
+                <h3 class="text-primary font-semibold text-lg">{{ .subtitle }}</h3>
+                <h2 class="mt-2">{{ .title | markdownify }}</h2>
+              </div>
+              <p class="mb-6 text-lg">{{ .content | markdownify }}</p>
+              
+              <div class="mb-6">
+                <h4 class="mb-4 font-semibold">Our services include:</h4>
+                <ul class="mb-6">
+                  {{ range .bulletpoints }}
+                    <li class="relative mb-3 pl-6">
+                      <i class="fa fa-check absolute left-0 top-1.5 text-primary"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+
+              <div class="mb-6">
+                <h4 class="mb-4 font-semibold">Package includes:</h4>
+                <ul class="mb-6">
+                  {{ range .features }}
+                    <li class="relative mb-3 pl-6">
+                      <i class="fa fa-star absolute left-0 top-1.5 text-primary"></i>
+                      {{ . | markdownify }}
+                    </li>
+                  {{ end }}
+                </ul>
+                <div class="bg-primary/10 dark:bg-primary/20 rounded-lg p-4 mb-6">
+                  <p class="text-lg font-semibold text-primary">{{ .price }}</p>
+                </div>
+              </div>
+
+              {{ with .button }}
+                {{ if .enable }}
+                  <a 
+                    class="btn btn-primary" 
+                    href="{{ .link | absURL }}"
+                    {{ if .external }}target="_blank" rel="noopener"{{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-external-link pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+            <div class="md:col-5 mb-6 md:mb-0">
+              {{ partial "image" (dict "Src" .image "Alt" "Flutch.ai platform" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Flutch.ai Project -->
+
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}

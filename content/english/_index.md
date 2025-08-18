@@ -62,4 +62,31 @@ features:
       enable: true
       label: "Get a Demo"
       link: "/request"
+
+# Flutch.ai Project
+flutch:
+  enable: true
+  title: "AI Agent Development Platform"
+  subtitle: "Flutch.ai"
+  content: "We create intelligent AI agents to automate business processes in support, sales, and analytics."
+  image: "/images/service-2.png"
+  bulletpoints:
+    - "Custom AI agent development for your specific needs"
+    - "No-code agent configuration"
+    - "Detailed real-time analytics"
+    - "Transparent cost control"
+    - "Secure deployment options"
+    - "Integration with existing systems"
+  button:
+    enable: true
+    label: "Learn more about Flutch.ai"
+    link: "https://flutch.ai/"
+    external: true
+  features:
+    - "Business process analysis"
+    - "Custom agent development" 
+    - "System integrations"
+    - "Team training"
+    - "3 months of support"
+  price: "Starting from $10,000"
 ---
