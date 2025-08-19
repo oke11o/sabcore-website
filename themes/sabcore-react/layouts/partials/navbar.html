@@ -23,9 +23,6 @@
       <a href="{{ .Site.BaseURL }}career/" class="navbar__link{{ if eq .Section "career" }} navbar__link--active{{ end }}">
         Career
       </a>
-      <a href="{{ .Site.BaseURL }}blog/" class="navbar__link{{ if eq .Section "blog" }} navbar__link--active{{ end }}">
-        Blog
-      </a>
       <a href="{{ .Site.BaseURL }}contact/" class="navbar__link{{ if eq .Section "contact" }} navbar__link--active{{ end }}">
         Contact
       </a>
@@ -44,7 +41,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(10, 15, 31, 0.95);
+  background: rgba(248, 250, 252, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(99, 102, 241, 0.2);
 }
@@ -125,7 +122,7 @@
 .navbar__cta {
   padding: 0.5rem 1rem;
   background: var(--color-primary);
-  color: #fff;
+  color: #1e293b;
   border-radius: 0.375rem;
   font-weight: 600;
   text-decoration: none;
