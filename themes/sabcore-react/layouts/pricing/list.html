@@ -1,0 +1,322 @@
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main class="pricing">
+  <section class="pricing__intro">
+    <h1 class="pricing__heading">{{ .Title }}</h1>
+    <p class="pricing__subheading">Choose the plan that's right for you</p>
+    <p class="pricing__note">All plans include a 14‑day free trial</p>
+  </section>
+  <section class="pricing__plans">
+    <div class="plans">
+      <!-- Starter Plan -->
+      <article class="plan">
+        <h3 class="plan__name">Starter</h3>
+        <p class="plan__description">Ideal for small businesses or startups beginning to use load testing</p>
+        <div class="plan__price">
+          <span class="plan__amount">$100</span>
+          <span class="plan__period">/month</span>
+        </div>
+        <ul class="plan__features">
+          <li>Up to 100 hours of testing per month</li>
+          <li>Basic access to AI analytics</li>
+          <li>Email support</li>
+          <li>1 integration</li>
+        </ul>
+        <a href="{{ .Site.BaseURL }}request/" class="plan__cta">Get a Demo</a>
+      </article>
+      
+      <!-- Professional Plan -->
+      <article class="plan plan--popular">
+        <div class="plan__badge">Most Popular</div>
+        <h3 class="plan__name">Professional</h3>
+        <p class="plan__description">Perfect for mid‑sized companies that need advanced capabilities</p>
+        <div class="plan__price">
+          <span class="plan__amount">$500</span>
+          <span class="plan__period">/month</span>
+        </div>
+        <ul class="plan__features">
+          <li>Up to 500 hours of testing per month</li>
+          <li>Enhanced AI features and analytics</li>
+          <li>Chat and email support</li>
+          <li>Up to 5 integrations</li>
+          <li>Personalised reports</li>
+        </ul>
+        <a href="{{ .Site.BaseURL }}request/" class="plan__cta">Get a Demo</a>
+      </article>
+      
+      <!-- Enterprise Plan -->
+      <article class="plan">
+        <h3 class="plan__name">Enterprise</h3>
+        <p class="plan__description">For large organisations that require a scalable solution</p>
+        <div class="plan__price">
+          <span class="plan__amount">On request</span>
+        </div>
+        <ul class="plan__features">
+          <li>Unlimited testing hours</li>
+          <li>Full access to AI analytics and automation</li>
+          <li>24/7 support with dedicated manager</li>
+          <li>Unlimited integrations</li>
+          <li>API access</li>
+        </ul>
+        <a href="{{ .Site.BaseURL }}request/" class="plan__cta">Get a Demo</a>
+      </article>
+    </div>
+  </section>
+  <section class="pricing__custom">
+    <p>Need more information or a custom plan?</p>
+    <a href="{{ .Site.BaseURL }}request/" class="pricing__customButton">Request a Demo</a>
+  </section>
+  
+  <!-- FAQ Section -->
+  {{ with .Site.Data.pricing.faq }}
+  <section class="pricing__faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      {{ range . }}
+      <details class="faq__item">
+        <summary class="faq__question">{{ .question }}</summary>
+        <p class="faq__answer">{{ .answer }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}
+
+{{ define "styles" }}
+<style>
+/* Pricing page styles */
+.pricing {
+  min-height: calc(100vh - 120px);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.pricing__intro {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  color: #fff;
+}
+
+.pricing__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing__subheading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e0e7ff;
+}
+
+.pricing__note {
+  font-size: 1rem;
+  color: #fbbf24;
+  font-weight: 500;
+}
+
+.pricing__plans {
+  padding: 4rem 1rem;
+  background: var(--color-surface);
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plan {
+  background: #131c35;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.plan--popular {
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.plan__badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.plan__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.plan__description {
+  color: var(--color-muted);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.plan__price {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.plan__amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.plan__period {
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.plan__features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-text);
+}
+
+.plan__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.plan__cta {
+  display: block;
+  text-align: center;
+  padding: 0.875rem 1.5rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.plan__cta:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.pricing__custom {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--color-bg);
+}
+
+.pricing__custom p {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.pricing__customButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--color-secondary);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pricing__customButton:hover {
+  background: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.pricing__faq {
+  padding: 4rem 1rem;
+  background: var(--color-surface);
+}
+
+.pricing__faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  background: #131c35;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.faq__question {
+  padding: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  position: relative;
+}
+
+.faq__question::after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.faq__item[open] .faq__question::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faq__answer {
+  padding: 0 1.5rem 1.5rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+</style>
+{{ end }}

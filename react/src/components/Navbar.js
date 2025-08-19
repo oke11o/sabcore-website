@@ -70,6 +70,24 @@ function Navbar() {
           >
             Career
           </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              'navbar__link' + (isActive ? ' navbar__link--active' : '')
+            }
+            onClick={handleLinkClick}
+          >
+            Blog
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              'navbar__link' + (isActive ? ' navbar__link--active' : '')
+            }
+            onClick={handleLinkClick}
+          >
+            Contact
+          </NavLink>
           <NavLink to="/demo" className="navbar__cta" onClick={handleLinkClick}>
             Get a Demo
           </NavLink>

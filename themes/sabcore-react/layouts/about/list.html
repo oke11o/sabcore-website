@@ -1,0 +1,231 @@
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main class="about">
+  <section class="about__intro">
+    <h1 class="about__heading">{{ .Title }}</h1>
+    <p class="about__subheading">
+      We're building the future of performance testing by combining artificial intelligence with
+      years of industry expertise.
+    </p>
+  </section>
+  <section class="about__stats">
+    <div class="stat">
+      <div class="stat__value">98%</div>
+      <div class="stat__label">Faster Test Creation</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">75%</div>
+      <div class="stat__label">Reduced Testing Time</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">24/7</div>
+      <div class="stat__label">Automated Monitoring</div>
+    </div>
+  </section>
+  <section class="about__story">
+    <h2>Our Story</h2>
+    <p>
+      Founded in 2022, SabCore emerged from a simple observation: traditional load testing tools
+      weren't keeping up with modern application complexity. Our founders, with decades of
+      experience in performance engineering and artificial intelligence, set out to create a
+      solution that would revolutionise how companies approach load testing.
+    </p>
+  </section>
+  <section class="about__mission">
+    <h2>Our Mission</h2>
+    <p>
+      To empower development teams with intelligent, automated load testing solutions that ensure
+      optimal application performance at any scale.
+    </p>
+  </section>
+  <section class="about__vision">
+    <h2>Our Vision</h2>
+    <p>
+      To become the global standard for AI‑powered performance testing, making advanced load
+      testing accessible to every development team.
+    </p>
+  </section>
+  <section class="about__difference">
+    <h2>The SabCore Difference</h2>
+    <div class="difference__items">
+      <article class="difference__item">
+        <h3>AI‑Powered Innovation</h3>
+        <p>
+          Our platform leverages cutting‑edge artificial intelligence to automate test
+          creation, identify patterns and predict potential performance issues before they impact
+          your users.
+        </p>
+      </article>
+      <article class="difference__item">
+        <h3>Real‑World Simulation</h3>
+        <p>
+          We don't just generate traffic – we simulate real user behaviour patterns, ensuring
+          your tests reflect actual usage scenarios and provide meaningful insights.
+        </p>
+      </article>
+      <article class="difference__item">
+        <h3>Continuous Adaptation</h3>
+        <p>
+          Our AI models continuously learn and adapt, improving test accuracy and helping you
+          stay ahead of performance challenges in your ever‑evolving applications.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="about__cta">
+    <a href="{{ .Site.BaseURL }}request/" class="about__button">
+      Request a Demo
+    </a>
+  </section>
+</main>
+{{ end }}
+
+{{ define "styles" }}
+<style>
+/* About page styles */
+.about {
+  min-height: calc(100vh - 120px);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.about__intro {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  color: #fff;
+}
+
+.about__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about__subheading {
+  font-size: 1.1rem;
+  color: #e0e7ff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about__stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem 1rem;
+  background: var(--color-surface);
+}
+
+@media (max-width: 768px) {
+  .about__stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat__label {
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.about__story,
+.about__mission,
+.about__vision {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about__story h2,
+.about__mission h2,
+.about__vision h2,
+.about__difference h2 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about__story p,
+.about__mission p,
+.about__vision p {
+  color: var(--color-muted);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.about__difference {
+  padding: 3rem 1rem;
+  background: var(--color-surface);
+}
+
+.about__difference h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.difference__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.difference__item {
+  background: #131c35;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.difference__item:hover {
+  transform: translateY(-5px);
+}
+
+.difference__item h3 {
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.difference__item p {
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.about__cta {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.about__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.about__button:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+</style>
+{{ end }}

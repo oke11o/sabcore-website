@@ -1,0 +1,59 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Pricing"
+url = "/pricing"
+weight = 3
+
+[[main]]
+name = "Career"
+url = "/career"
+weight = 4
+
+#[[main]]
+#parent = "Career"
+#name = "Engineer"
+#url = "/career/engineer"
+#
+#[[main]]
+#parent = "Career"
+#name = "Manager"
+#url = "/career/manager"
+
+
+# footer menu
+[[footer]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Pricing"
+url = "/pricing"
+weight = 2
+
+[[footer]]
+name = "Career"
+url = "/career"
+weight = 3
+
+#[[footer]]
+#name = "Elements"
+#url = "/elements"
+#weight = 4
+#
+#[[footer]]
+#name = "Privacy Policy"
+#url = "/privacy-policy"
+#weight = 5

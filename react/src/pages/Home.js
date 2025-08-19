@@ -76,6 +76,41 @@ function Home() {
           </article>
         </div>
       </section>
+      <section className="flutch">
+        <div className="flutch__inner">
+          <h2 className="flutch__title">AI Agent Development Platform</h2>
+          <h3 className="flutch__subtitle">Flutch.ai</h3>
+          <p className="flutch__content">
+            We create intelligent AI agents to automate business processes in support, sales, and analytics.
+          </p>
+          <div className="flutch__features">
+            <ul className="flutch__list">
+              <li>Custom AI agent development for your specific needs</li>
+              <li>No-code agent configuration</li>
+              <li>Detailed real-time analytics</li>
+              <li>Transparent cost control</li>
+              <li>Secure deployment options</li>
+              <li>Integration with existing systems</li>
+            </ul>
+            <div className="flutch__package">
+              <h4>Complete Package Includes:</h4>
+              <ul>
+                <li>Business process analysis</li>
+                <li>Custom agent development</li>
+                <li>System integrations</li>
+                <li>Team training</li>
+                <li>3 months of support</li>
+              </ul>
+              <p className="flutch__price">Starting from $10,000</p>
+            </div>
+          </div>
+          <div className="flutch__actions">
+            <a href="https://flutch.ai/" className="flutch__cta" target="_blank" rel="noopener noreferrer">
+              Learn more about Flutch.ai
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

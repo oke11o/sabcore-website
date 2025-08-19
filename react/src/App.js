@@ -7,6 +7,8 @@ import About from './pages/About';
 import Pricing from './pages/Pricing';
 import Career from './pages/Career';
 import Demo from './pages/Demo';
+import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
 /**
  * Top‑level application component.  Renders the navigation bar,
@@ -25,13 +27,15 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/career" element={<Career />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           {/* Catch‑all route for unknown paths */}
           <Route
             path="*"
             element={
               <main style={{ padding: '4rem 1rem', textAlign: 'center' }}>
                 <h1>Page Not Found</h1>
-                <p>The page you’re looking for doesn’t exist.</p>
+                <p>The page you're looking for doesn't exist.</p>
               </main>
             }
           />
