@@ -3,7 +3,7 @@ extended = true
 min = "0.141.0"
 
 # [[imports]]
-# path = "github.com/zeon-studio/hugoplate"
+# path = "themes/sabcore-react"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/search"

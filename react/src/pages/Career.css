@@ -1,0 +1,151 @@
+/* Styles for career page */
+.career {
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding-bottom: 4rem;
+}
+
+.career__hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff;
+}
+
+.career__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.career__subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f4f4ff;
+}
+
+.career__positions {
+  padding: 3rem 1rem;
+}
+
+.positions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.position {
+  background: #1c2546;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.position:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.position__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.position__desc {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.position__link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.position__link:hover {
+  background: var(--color-secondary);
+}
+
+.career__values, .career__perks {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.career__values h2, .career__perks h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.values__list, .perks__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.values__list li h4 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.3rem;
+}
+
+.values__list li p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.perks__list li {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  position: relative;
+  padding-left: 1rem;
+}
+
+.perks__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+.career__cta {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.career__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.career__button:hover {
+  background: var(--color-secondary);
+}

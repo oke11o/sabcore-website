@@ -1,7 +1,11 @@
 [build]
-publish = "public"
-command = "yarn project-setup; yarn build"
+publish = "build"
+command = "yarn install && yarn build"
 
 [build.environment]
-HUGO_VERSION = "0.144.2"
-GO_VERSION = "1.24.0"
+NODE_VERSION = "18"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

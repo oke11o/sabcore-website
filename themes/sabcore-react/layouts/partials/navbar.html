@@ -1,0 +1,171 @@
+<header class="navbar">
+  <div class="navbar__content">
+    <div class="navbar__brand">
+      <a href="{{ .Site.BaseURL }}" class="navbar__logo">
+        SabCore
+      </a>
+    </div>
+    <button class="navbar__toggle" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+      <span class="navbar__hamburger"></span>
+      <span class="navbar__hamburger"></span>
+      <span class="navbar__hamburger"></span>
+    </button>
+    <nav class="navbar__nav" id="mobile-menu">
+      <a href="{{ .Site.BaseURL }}" class="navbar__link{{ if .IsHome }} navbar__link--active{{ end }}">
+        Home
+      </a>
+      <a href="{{ .Site.BaseURL }}about/" class="navbar__link{{ if eq .Section "about" }} navbar__link--active{{ end }}">
+        About
+      </a>
+      <a href="{{ .Site.BaseURL }}pricing/" class="navbar__link{{ if eq .Section "pricing" }} navbar__link--active{{ end }}">
+        Pricing
+      </a>
+      <a href="{{ .Site.BaseURL }}career/" class="navbar__link{{ if eq .Section "career" }} navbar__link--active{{ end }}">
+        Career
+      </a>
+      <a href="{{ .Site.BaseURL }}contact/" class="navbar__link{{ if eq .Section "contact" }} navbar__link--active{{ end }}">
+        Contact
+      </a>
+      <a href="{{ .Site.BaseURL }}request/" class="navbar__cta">
+        Get a Demo
+      </a>
+    </nav>
+  </div>
+</header>
+
+<style>
+/* Navbar styles from React component */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.navbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 64px;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar__logo:hover {
+  color: var(--color-secondary);
+}
+
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.navbar__hamburger {
+  width: 25px;
+  height: 3px;
+  background: var(--color-text);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: var(--color-primary);
+}
+
+.navbar__link--active {
+  color: var(--color-primary);
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-primary);
+  border-radius: 1px;
+}
+
+.navbar__cta {
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: #1e293b;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar__cta:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: flex;
+  }
+  
+  .navbar__nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 15, 31, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__nav--open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+</style>
+
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('navbar__nav--open');
+}
+</script>

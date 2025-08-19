@@ -1,0 +1,12 @@
+name = "SabCore React"
+license = "MIT"
+licenselink = "https://github.com/oke11o/sabcore-website/blob/main/LICENSE"
+description = "Modern React-inspired Hugo theme for SabCore"
+homepage = "https://github.com/oke11o/sabcore-website"
+tags = ["business", "portfolio", "responsive", "clean", "modern"]
+features = ["responsive"]
+min_version = "0.82.0"
+
+[author]
+  name = "SabCore Team"
+  homepage = "https://sabcore.io"
