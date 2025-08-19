@@ -1,0 +1,38 @@
+/*
+ * Footer styles
+ */
+.footer {
+  background: #0a0f1f;
+  color: var(--color-muted);
+  padding: 2rem var(--spacing);
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__link {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--color-secondary);
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
+  text-align: center;
+}
